@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/final.css">
+  <title>Você Perdeu</title>
+</head>
+<body>
+
+  <div class="painel-final derrota">
+    <h1>❌ Fim de Jogo!</h1>
+
+    <h2 id="mensagem"></h2>
+
+    <p id="acertos-info"></p>
+
+    <button onclick="window.location.href='index.html'">
+      Jogar Novamente
+    </button>
+  </div>
+
+  <script>
+    const acertos = parseInt(localStorage.getItem("acertos")) || 0;
+
+    const mensagem = document.getElementById("mensagem");
+    const acertosInfo = document.getElementById("acertos-info");
+
+    if (acertos < 6) {
+      mensagem.textContent = "Não foi dessa vez! Continue tentando!";
+    } 
+    else if (acertos < 11) {
+      mensagem.textContent = "Você foi bem! Mas ainda pode melhorar!";
+    } 
+    else if (acertos < 16) {
+      mensagem.textContent = "Excelente desempenho! Quase chegou lá!";
+    }
+
+    acertosInfo.textContent = `Você acertou ${acertos} pergunta(s).`;
+
+    localStorage.removeItem("ganhou");
+  </script>
+
+</body>
+</html>
