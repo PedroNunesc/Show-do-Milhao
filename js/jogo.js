@@ -196,7 +196,6 @@ function finalizarJogo(ganhou) {
     }
 }
 
-/* 🚀 INICIA O JOGO AUTOMATICAMENTE */
 document.addEventListener("DOMContentLoaded", () => {
     mostrarPergunta();
 });
