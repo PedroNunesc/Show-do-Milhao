@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Show do Milhão</title>
 </head>
 <body>
 <div id="boas-vindas">
-    <h1> Show do Milhão </h1>
+    <h1>💰 Show do Milhão 💰</h1>
    
     <h2>Bem-vindo ao Show do Milhão!</h2>
    
     <p>Você gostaria de participar?</p>
    
-    <button onclick="comecarJogo()">Participar</button>
-  </div>
+    <button onclick="irParaJogo()">Participar</button>
 
-  <script>
-    function comecarJogo() {
-      alert("O jogo vai começar!");
-    }
-  </script>
+<script>
+  function irParaJogo() {
+    window.location.href = "telaJogo.html";
+  }
+</script>
 
 </body>
 </html>
