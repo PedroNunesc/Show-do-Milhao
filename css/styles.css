@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.botao {
+  display: inline-block;
+  padding: 15px 40px;
+  background: linear-gradient(45deg, #ffd700, #ffae00);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px gold;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #1a2a6c, #0f1a40, #000814);
+  color: white;
+  text-align: center;
+}
+
+#boas-vindas {
+  background: linear-gradient(145deg, #0d1b4c, #1b2f7a);
+  padding: 100px 34px;
+  border-radius: 20px;
+  border: 4px solid gold;
+  box-shadow: 0 0 25px gold;
+  max-width: 600px;
+  width: 90%;
+}
+
+#boas-vindas h1 {
+  font-size: 48px;
+  color: gold;
+  text-shadow: 0 0 20px #ffd700, 0 0 20px #ffae00;
+  margin-bottom: 30px;
+}
+
+#boas-vindas h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+#boas-vindas p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#boas-vindas button {
+  background: linear-gradient(45deg, #ffd700, #ffae00);
+  border: none;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #000;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px gold;
+}
+
+#boas-vindas button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #ffd700;
+}
